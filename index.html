@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruaa Altameemi Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+
+    }
+
+    header {
+      background-color: #2e2e2e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    #aboutMeText {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #0073e6;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005bb5;
+    }
+
+    footer {
+      background-color: #2e2e2e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Ruaa Altameemi | Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Ruaa Altameemi</p>
+    <p>Computer Engineering</p>
+    <p>💻 Web Development Projects</p>
+    <p>🗂️ Project Management Experience</p>
+    <img src="images/ruaa-pic.jpeg" alt="Graduation Photo of Ruaa Altameemi" width="200" />
+    <button onclick="toggleAbout()">Learn More About Me</button>
+    <div id="aboutMeText">
+      <p>I am a Computer Engineering graduate from the Class of 2022 with hands-on experience in both iOS development and data analysis. I completed a year-long contract role in iOS development, where I contributed to building and maintaining user-friendly mobile applications.</p>
+      <p>Following that, I worked as a Data Analyst at Flywheel (formerly WhyteSpyder), where I gained valuable experience in data interpretation, reporting, and providing actionable insights to support business decisions.</p>
+      <p>Currently, I am enhancing my skills by pursuing the Google Project Management Certificate to deepen my understanding of project planning, team coordination, and workflow optimization.</p>
+      <p>I’m passionate about leveraging technology to solve real-world problems and continuously expanding my skill set to grow in the tech and project management fields.</p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" style="background-color:#f9f9f9;">
+    <h2>My Resume</h2>
+    <img src="images/grad-photo.jpeg" alt="Photo of Ruaa Altameemi" width="150" style="border-radius:50%;" />
+    <p>
+      <strong>Ruaa Altameemi</strong><br />
+      Project Coordinator | Project Manager<br /><br />
+      📧 <a href="mailto:ruaaaltameemi4@gmail.com">ruaaaltameemi4@gmail.com</a><br />
+      📞 916-586-1411<br />
+      🌐 <a href="https://www.linkedin.com/in/rua-a-altameemi-753578124" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a><br /><br />
+      <a href="resume/ruaa-resume.pdf" download>📄 Download My Resume (PDF)</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ruaa</p>
+  </footer>
+
+  <script>
+    function toggleAbout() {
+      const aboutText = document.getElementById("aboutMeText");
+      if (aboutText.style.display === "none" || aboutText.style.display === "") {
+        aboutText.style.display = "block";
+      } else {
+        aboutText.style.display = "none";
+      }
+    }
+  </script>
+
+  <!-- Degrees Section -->
+<section id="degrees">
+    <h2>Degrees</h2>
+    <p>Bachelor of Science in Computer Engineering, Class of 2022</p>
+  </section>
+  
+  <!-- Contact Me Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ruaaaltameemi4@gmail.com">ruaaaltameemi4@gmail.com</a></p>
+    <p>Phone: 916-586-1411</p>
+    <p>Location: Fairfax VA, USA</p>
+  </section>
+  
+  
+
+</body>
+</html>

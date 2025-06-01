@@ -1,0 +1,106 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e6ecf0; /* light blue-gray */
+    color: #222;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1f3b4d; /* deep navy */
+    color: #f5f5f5;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  /* Section Styles */
+  section {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Section Titles */
+  section h2 {
+    text-align: center;
+    color: #2a2a2a;
+  }
+  
+  /* Resume Photo */
+  #resume img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+  }
+  
+  /* Resume Links */
+  #resume a {
+    color: #ff6b6b; /* coral */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #resume a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Download button specifically */
+  #resume a[download] {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  #resume a[download]:hover {
+    background-color: #e85c5c;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1f3b4d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  /* just added */
+  /* Navigation Bar */
+nav {
+    margin-top: 15px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #f5f5f5; /* white or light color to match header */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  section p {
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+    
+  
