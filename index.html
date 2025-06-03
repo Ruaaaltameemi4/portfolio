@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ruaa Altameemi Portfolio</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
       color: #333;
-
     }
 
     header {
@@ -83,6 +86,11 @@
       padding: 15px 0;
       margin-top: 40px;
     }
+
+    #contact p, #degrees p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -94,6 +102,8 @@
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#resume">Resume</a></li>
+        <li><a href="#degrees">Degrees</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -119,34 +129,23 @@
   <section id="resume" style="background-color:#f9f9f9;">
     <h2>My Resume</h2>
     <img src="images/grad-photo.jpeg" alt="Photo of Ruaa Altameemi" width="150" style="border-radius:50%;" />
-    <p>
-      <strong>Ruaa Altameemi</strong><br />
-      Project Coordinator | Project Manager<br /><br />
-      📧 <a href="mailto:ruaaaltameemi4@gmail.com">ruaaaltameemi4@gmail.com</a><br />
-      📞 916-586-1411<br />
-      🌐 <a href="https://www.linkedin.com/in/rua-a-altameemi-753578124" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a><br /><br />
-      <a href=" https://github.com/Ruaaaltameemi4/portfolio " target="_blank" rel="noopener noreferrer">github</a><br> <br />
-      <a href="resume/ruaa-resume.pdf" download>📄 Download My Resume (PDF)</a>
-    </p>
+    <p><strong>Ruaa Altameemi</strong><br />
+      Project Coordinator | Project Manager</p>
+    <ul style="list-style: none; padding: 0;">
+      <li>📧 <a href="mailto:ruaaaltameemi4@gmail.com">ruaaaltameemi4@gmail.com</a></li>
+      <li>📞 916-586-1411</li>
+      <li>🌐 <a href="https://www.linkedin.com/in/rua-a-altameemi-753578124" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+      <li>💻 <a href="https://github.com/Ruaaaltameemi4/portfolio" target="_blank" rel="noopener noreferrer">GitHub Portfolio</a></li>
+      <li>📄 <a href="resume/ruaa-resume.pdf" download>Download My Resume (PDF)</a></li>
+    </ul>
   </section>
 
-  <script>
-    function toggleAbout() {
-      const aboutText = document.getElementById("aboutMeText");
-      if (aboutText.style.display === "none" || aboutText.style.display === "") {
-        aboutText.style.display = "block";
-      } else {
-        aboutText.style.display = "none";
-      }
-    }
-  </script>
-
   <!-- Degrees Section -->
-<section id="degrees">
+  <section id="degrees">
     <h2>Degrees</h2>
     <p>Bachelor of Science in Computer Engineering, Class of 2022</p>
   </section>
-  
+
   <!-- Contact Me Section -->
   <section id="contact">
     <h2>Contact Me</h2>
@@ -154,12 +153,19 @@
     <p>Phone: 916-586-1411</p>
     <p>Location: Fairfax VA, USA</p>
   </section>
-  
-   <!-- Footer -->
-   <footer>
+
+  <!-- Footer -->
+  <footer>
     <p>© 2025 Ruaa</p>
   </footer>
-  
+
+  <!-- Toggle Script -->
+  <script>
+    function toggleAbout() {
+      const aboutText = document.getElementById("aboutMeText");
+      aboutText.style.display = (aboutText.style.display === "none" || aboutText.style.display === "") ? "block" : "none";
+    }
+  </script>
 
 </body>
 </html>
