@@ -102,5 +102,9 @@ nav {
     line-height: 1.6;
     margin-bottom: 15px;
   }
-    
+
+  #contact p, #degrees p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
   
